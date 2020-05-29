@@ -1,14 +1,12 @@
-language: objective-c
-
-env:
- global:
-  - EnableNuGetPackageRestore=true 
- matrix:
-  - MONO_VERSION="3.8.0"
-
-before_install:
- - wget "http://download.mono-project.com/archive/${MONO_VERSION}/macos-10-x86/MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg"
- - sudo installer -pkg "MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg" -target /
-
+language: csharp
+dist: trusty
+os: linux
+mono: none
+dotnet: 2.1
+install:
+  - dotnet restore
 script:
- - xbuild 
+  - dotnet build MimeSharp/MimeSharp.csproj
+  - dotnet test MimeSharp.Tests/MimeSharp.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+after_success:
+  - dotnet pack /p:Configuration=Release

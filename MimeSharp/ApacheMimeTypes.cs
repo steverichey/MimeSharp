@@ -1,8 +1,20 @@
-﻿namespace MimeSharp
+﻿// <copyright file="ApacheMimeTypes.cs" company="Float">
+// Copyright (c) 2015 Ujjwol Lamichhane and 2020 Float, LLC. All rights reserved.
+// Shared under an MIT license. See license.md for details.
+// </copyright>
+
+namespace MimeSharp
 {
-    public class ApacheMimeTypes
+    /// <summary>
+    /// Contains known mime types.
+    /// </summary>
+    internal static class ApacheMimeTypes
     {
-        public static string AllMimeTypes = @"
+        /// <summary>
+        /// Gets a string containing all mime types.
+        /// </summary>
+        /// <value>All known mime types.</value>
+        internal static string AllMimeTypes => @"
 # This file maps Internet media types to unique file extension(s).
 # Although created for httpd, this file is used by many software systems
 # and has been placed in the public domain for unlimited redisribution.
@@ -1592,7 +1604,5 @@ video/x-sgi-movie               movie
 video/x-smv                 smv
 x-conference/x-cooltalk             ice
 ";
-
     }
 }
-
