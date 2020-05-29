@@ -1,9 +1,11 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimeSharp", "MimeSharp\MimeSharp.csproj", "{FD75461E-14E4-4F12-BA6B-2AEDA6F99DB7}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimeSharp", "MimeSharp\MimeSharp.csproj", "{A1460DAC-6FAF-4679-AC16-F76200692804}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimeSharp.Tests", "MimeSharp.Tests\MimeSharp.Tests.csproj", "{122E1176-55C8-43C4-886E-5E5A2B4E0E4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimeSharp.FromFile", "MimeSharp.FromFile\MimeSharp.FromFile.csproj", "{E1287CDA-A311-49F5-A59E-2E0B47132663}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +13,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FD75461E-14E4-4F12-BA6B-2AEDA6F99DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD75461E-14E4-4F12-BA6B-2AEDA6F99DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD75461E-14E4-4F12-BA6B-2AEDA6F99DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD75461E-14E4-4F12-BA6B-2AEDA6F99DB7}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
+		{A1460DAC-6FAF-4679-AC16-F76200692804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1460DAC-6FAF-4679-AC16-F76200692804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1460DAC-6FAF-4679-AC16-F76200692804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1460DAC-6FAF-4679-AC16-F76200692804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{122E1176-55C8-43C4-886E-5E5A2B4E0E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{122E1176-55C8-43C4-886E-5E5A2B4E0E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{122E1176-55C8-43C4-886E-5E5A2B4E0E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{122E1176-55C8-43C4-886E-5E5A2B4E0E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1287CDA-A311-49F5-A59E-2E0B47132663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1287CDA-A311-49F5-A59E-2E0B47132663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1287CDA-A311-49F5-A59E-2E0B47132663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1287CDA-A311-49F5-A59E-2E0B47132663}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

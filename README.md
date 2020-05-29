@@ -43,11 +43,11 @@ audio/ogg
 image/jpeg
 ```
 
-### mime.DefaultType()
+### mime.DefaultType
 When no mime type is found. Default is `application/octet-stream`.
 
 ### mime.Extension(mimeType)
-Get all the extension for `mimeType`. Gives you a list `List<string>` of extensions. Empty list if no mime type is found.
+Get all the extension for `mimeType`. Gives you a list `IList<string>` of extensions. Empty list if no mime type is found.
 
 ```csharp
 var mime = new Mime();
@@ -74,7 +74,7 @@ Based off [node-mime by broofa for Node.Js](https://github.com/broofa/node-mime)
 
 This program is licensed under the MIT License.
 ```
-Copyright (c) 2014 Ujjwol Lamichhane
+Copyright (c) 2014 Ujjwol Lamichhane and 2020 Float, LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
